@@ -1,24 +1,29 @@
 <mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav">
+  <mat-drawer opened #drawer mode="side" class="sidenav">
 
-    <button color="primary" mat-button routerLink="/customers">
-      <mat-icon matSuffix>person</mat-icon>
-      Customers
-    </button>
-    <button color="primary" mat-button routerLink="/orders">
-      <mat-icon matSuffix>add_shopping_cart</mat-icon>
-      Orders
-    </button>
-    <button color="primary" mat-button routerLink="/messages">
-      <mat-icon matSuffix>textsms</mat-icon>
-      Messages
-    </button>
+    <mat-toolbar class="side-bar">Admin</mat-toolbar>
+
+    <div class="nav-items">
+      <button color="primary" mat-button routerLink="/customers">
+        <mat-icon matSuffix>person</mat-icon>
+        Customers
+      </button>
+      <button color="primary" mat-button routerLink="/orders">
+        <mat-icon matSuffix>add_shopping_cart</mat-icon>
+        Orders
+      </button>
+      <button color="primary" mat-button routerLink="/messages">
+        <mat-icon matSuffix>textsms</mat-icon>
+        Messages
+      </button>
+    </div>
+
 
   </mat-drawer>
 
   <div class="sidenav-content">
     <mat-toolbar color="primary">
-      <mat-toolbar-row>
+      <mat-toolbar-row class="toolbar-row">
 
         <button mat-icon-button (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>

@@ -3,22 +3,22 @@
 
     <mat-card-content class="card-content">
 
-        <form>
+        <form [formGroup]="loginForm">
             <mat-form-field appearance="outline">
                 <mat-label>Usuário</mat-label>
-                <input matInput type="text">
+                <input formControlName="username" matInput type="text">
             </mat-form-field>
     
             <mat-form-field appearance="outline">
                 <mat-label>Senha</mat-label>
-                <input matInput type="text">
+                <input formControlName="password" matInput type="password">
             </mat-form-field>
         </form>
 
     </mat-card-content>
 
     <mat-card-actions class="card-footer">
-        <button mat-raised-button color="accent">
+        <button mat-raised-button color="primary" [disabled]="loginForm.invalid" (click)="login()">
             Entrar
         </button>
     </mat-card-actions>
