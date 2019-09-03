@@ -3,22 +3,43 @@
 
     <mat-toolbar class="side-bar">Admin</mat-toolbar>
 
-    <div class="nav-items">
-      <button color="primary" mat-button routerLink="/customers">
+    <mat-nav-list class="nav-links">
+      <h2 matSubheader class="side-header">Trabalho</h2>
+      <a mat-list-item class="nav-item" routerLink="/customers">
         <mat-icon matSuffix>person</mat-icon>
         Customers
-      </button>
-      <button color="primary" mat-button routerLink="/orders">
+      </a>
+      <a mat-list-item class="nav-item" routerLink="/orders">
         <mat-icon matSuffix>add_shopping_cart</mat-icon>
         Orders
-      </button>
-      <button color="primary" mat-button routerLink="/messages">
+      </a>
+      <a mat-list-item class="nav-item" routerLink="/messages">
         <mat-icon matSuffix>textsms</mat-icon>
         Messages
-      </button>
-    </div>
+      </a>
+    </mat-nav-list>
 
+    <mat-divider></mat-divider>
 
+    <mat-nav-list class="nav-links">
+      <h2 matSubheader class="side-header">Estatística</h2>
+      <a mat-list-item class="nav-item">
+          <mat-icon matSuffix>extension</mat-icon>
+          Extensões
+        </a>
+        <a mat-list-item class="nav-item">
+          <mat-icon matSuffix>language</mat-icon>
+          Idioma
+        </a>
+        <a mat-list-item class="nav-item">
+          <mat-icon matSuffix>bar_chart</mat-icon>
+          Modelo
+        </a>
+        <a mat-list-item class="nav-item">
+          <mat-icon matSuffix>phone</mat-icon>
+          Contatos
+        </a>
+    </mat-nav-list>
   </mat-drawer>
 
   <div class="sidenav-content">

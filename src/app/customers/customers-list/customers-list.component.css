@@ -1,0 +1,21 @@
+mat-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-container {
+    margin: 15px;
+    width: 300px;
+}
+
+.mat-card-avatar {
+    background-image: url('../../../assets/img/avatar.png');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}

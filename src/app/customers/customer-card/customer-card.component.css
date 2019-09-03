@@ -1,6 +1,7 @@
 .mat-card {
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
+    margin-top: 15px;
 }
 
 .mat-card-avatar {
@@ -14,4 +15,9 @@
 
 .mat-card-actions .flex-spacer {
     width: 100%;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
 }

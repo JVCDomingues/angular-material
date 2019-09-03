@@ -1,3 +1,25 @@
-<p>
-  customers-list works!
-</p>
+<div class="container">
+  <mat-card *ngFor="let customer of customers.results" class="card-container">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{customer.name.first.toUpperCase()}}</mat-card-title>
+      <mat-card-subtitle>{{customer.email}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image alt="User Image" [src]="customer.picture.large">
+    
+    <mat-card-content class="card-content">
+     Hey, guys! :)
+    </mat-card-content>
+    
+    <mat-divider></mat-divider>
+    <mat-card-actions align="end">
+      <button color="primary" mat-icon-button>
+        <mat-icon>thumb_up</mat-icon>
+      </button>
+      <button color="accent" mat-icon-button>
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
